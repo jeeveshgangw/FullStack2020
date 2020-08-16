@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        ul{
+            width: 100%;
+            background-color: lightslategrey; 
+            padding: 10px;
+            height: 50px;
+            position: fixed;
+            top:0;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
+        ul li{
+            display: inline-block;
+            
+        }
+        ul li a{
+           display: block;
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            padding: 10px 20px;
+            
+        }
+        #nav{
+            content: '';
+           display: block;
+           clear: both; 
+        }
+        ul li a:hover{
+            color:black;
+            background-color: white;
+        }
+        #back img{
+            padding-top: 100px;
+               width: 100%;
+               padding-bottom: 100px;
+        }
+        #back::after{
+            content: '';
+           display: block;
+           clear: both;
+        }
+        .top-left {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  font-size:60px;
+  color: white;
+}
+#team{
+    display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            margin-bottom: 100px;
+}
+#team img{
+    border-radius: 50%;   
+}
+#team::after{
+    content: '';
+           display: block;
+           clear: both;
+}
+#leftbox{
+    margin-top: 50px;
+            background-color:lightslategrey;
+            width: 50%;
+            height: 610px;
+            float: left;
+            margin-bottom: 50px;
+            color: white;
+            margin-left: 15px;
+            padding-left: 10px;
+            font-size: medium;
+            justify-content: space-evenly;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        #pic1{
+            margin-top: 50px;
+        }
+        #section-2 img{
+            width: 46%;
+            height: 190px;
+            float: right;
+            margin-bottom: 15px;
+        }
+        #section-2:after{
+           content: '';
+           display: block;
+           clear: both;
+        }
+        .box{
+            margin-top: 50px;
+        margin-bottom: 100px;
+        }
+        .box1{
+            background-color: white;
+ float: left;
+ width: 300px;
+ height: 400px;
+ margin: 15px;
+ border-radius: 4px;
+        }
+        .box1 img{
+            margin: 10px;
+            border-radius: 4px;
+                }
+        .box2{
+            background-color: white;
+ float: left;
+ width: 300px;
+ height: 400px;
+ margin: 15px;
+ border-radius: 4px;
+        }
+        .box2 img{
+            margin: 10px;
+            width: 270px;
+            height: 180px;
+            border-radius: 4px;
+        }
+        .box3{
+            background-color: white;
+ float: left;
+ width: 300px;
+ height: 400px;
+ margin: 15px;
+ border-radius: 4px;
+        }
+        .box3 img{
+            margin: 10px;
+            width: 270px;
+            height: 180px;
+            border-radius: 4px;
+        }
+        .box4{
+            background-color: white;
+ float: left;
+ width: 300px;
+ height: 400px;
+ margin: 15px;
+ border-radius: 4px;
+        }
+        .box4 img{
+            margin: 10px;
+            width: 270px;
+            height: 180px;
+            border-radius: 4px;
+        }
+        p{
+            text-align:justify;
+            margin: 15px;
+        }
+        .box a{
+            display: block;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            border-radius: 4px;
+            margin: 15px;
+        }
+     .box a:hover{
+         background-color: blue;
+     }
+     .footer{
+         margin-top: 50px;
+         background-color: lightpink;
+         height: 100px;
+     }
+     .footer h4{
+         padding-top: 15px;
+         text-align: center;
+     }
+     .footer a{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+     }
+     .box::after{
+        content: '';
+           display: block;
+           clear: both;  
+     }
+     #container{
+         position: relative;
+     }
+     #container::after{
+        content: '';
+           display: block;
+           clear: both;
+     }
+     #middle{
+        position: absolute;
+  text-align: center;
+  right:20px
+  
+     }
+    </style>
+</head>
+<body>
+    <div id="nav">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#team-members">TEAM</a></li>
+        <li><a href="#tech">TECHNOLOGIES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</div>
+    <div id="back">
+    <img src="img/background.jpg" alt="background">
+    <div class="top-left"> PRACTICAL-8</div>
+</div>
+<h1  id="team-members" style="text-align: center;">TEAM MEMBERS</h1>
+<div id="team">
+    <img src="img/pic1.png" alt="">
+    <img src="img/pic2.png" alt="">
+    <img src="img/pic3.png" alt="">
+    <img src="img/pic4.png" alt="">
+</div>
+<h1 id="about" style="text-align: center;">ABOUT US</h1>
+<div id="section-2">
+    <div id="leftbox"><h2>About Projects</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore natus ratione sapiente delectus quae earum aliquam temporibus mollitia consequuntur ipsum quisquam, reiciendis tempora sint voluptate iusto alias eum suscipit vel, nulla sit excepturi. Ipsum quam voluptatibus iure aliquam enim soluta modi repellendus dolorum officiis sequi maiores, reprehenderit possimus esse eum, accusantium rem numquam fugiat reiciendis. Natus iusto pariatur sit asperiores fugiat. Modi exercitationem, eaque ea eligendi, nam quasi est a sed impedit dignissimos, minima porro! Ad hic error reprehenderit. Sunt voluptatum quisquam facilis molestias officiis nostrum! Necessitatibus vitae voluptates labore porro ratione sequi. Ullam sint iste doloribus, esse repudiandae, at ea impedit corrupti in labore temporibus laborum! Et fugiat fuga, consequatur voluptas, voluptatem nostrum laboriosam enim consectetur aliquid eligendi delectus cum explicabo tempora saepe optio quas consequuntur maxime inventore quae odit natus dignissimos repellat. Suscipit, doloribus? Quia sint dolore, at quae quo in deserunt culpa dolorem debitis asperiores ut labore quis commodi velit sit aperiam voluptatem magni, perferendis quas aliquid? Recusandae, debitis facilis quis ex nam numquam incidunt ab quibusdam corporis officiis fuga est amet cupiditate natus ipsum iste eaque rerum vel? Aspernatur praesentium quisquam magni odio nostrum aliquam? Hic magni sint temporibus libero corrupti placeat ipsa quibusdam eaque praesentium, quae illo deserunt porro totam repellendus nemo officia iure eum expedita est laudantium iusto eius nisi magnam aliquid. Earum non quibusdam eaque nisi voluptates incidunt dolorum mollitia nesciunt, reiciendis nulla illo provident, facilis fuga vitae quaerat iusto. Molestias laudantium officiis voluptatum aliquid libero, impedit repudiandae necessitatibus vitae! Est ipsum commodi eaque nulla architecto ratione tempora iste, quos officiis neque molestias natus tenetur, minima officia quidem cumque impedit enim! Magni, odit. Fuga suscipit sit eius voluptatum vel ipsum eaque aliquid dolorem iste, alias aperiam accusamus iusto aliquam explicabo porro eveniet quidem nulla ipsa commodi rerum excepturi asperiores natus? Distinctio, non debitis.   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab deserunt voluptates odit rem nobis, voluptatibus ex, pariatur voluptatum, aliquid delectus cumque quia soluta quisquam cum animi. Repellat praesentium dolor cumque nobis mollitia minus sapiente. Ullam, magni id temporibus enim quisquam aperiam! Omnis, aspernatur? Labore, alias ratione ex nam enim molestiae nisi esse corrupti, ipsam possimus atque dolorem. Necessitatibus numquam minus beatae labore, autem fugiat. Omnis voluptatibus facilis fugiat ad beatae consequatur magnam quasi perferendis eius nemo nisi blanditiis laborum culpa tempore rerum ex sit at harum laboriosam vitae, voluptatem iste sequi dolores! Nisi recusandae, harum blanditiis nemo eum eaque dolore obcaecati consectetur vero error voluptates asperiores ipsum rerum odit, magni nesciunt molestiae! Dignissimos corporis nostrum vero vel corrupti laborum expedita veritatis nihil facere repellat velit debitis doloremque eligendi illo quos, enim deserunt, facilis ut ipsa ad a odit quisquam atque? Dolorum sed eligendi earum quae corporis illo dolores? Nemo itaque esse harum ipsum eligendi id labore ab laborum eos vero asperiores aperiam ipsam, molestiae culpa animi? Labore suscipit vero, non nihil nam natus ut error atque similique, vitae ipsam quisquam numquam praesentium voluptates aut saepe sapiente voluptatem repellendus mollitia autem sint illum. Amet voluptate odit dolores odio animi possimus eveniet?</div>
+    <div id="container"><img id="pic1" src="img/table.jpg" alt=""><div id="middle">Project-1</div>
+    <img src="img/laptop.jpg" alt="">
+    <img src="img/group.jpeg" alt="">
+</div>
+</div>
+<h1  id="tech" style="text-align: center;">TECHNOLOGIES USED</h1>
+<div class="box">
+<div class="box1">
+    <center>
+       <img src="img/Html1.png">
+       <h3>Introduction to HTML</h3>
+       <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. </p>
+       <a href="pages/html.html" target="_blank"><center>Read More</center></a>
+    </center>
+</div>
+<div class="box2">
+   <center>
+       <img src="img/css1.png" >
+       <h3>Introduction to CSS</h3>
+       <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. </p>
+       <a href="pages/css.html" target="_blank"><center>Read More</center></a>
+    </center>
+</div>
+<div class="box3">
+<center>
+    <img src="img/js2.jpg" >
+    <h3>Introduction to JavaScript</h3>
+    <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level. </p>
+    <a href="pages/js.html" target="_blank"><center>Read More</center></a>
+</center>
+</div>
+<div class="box4">
+<center>
+    <img src="img/boots.jpg" >
+    <h3>Introduction to Bootstrap</h3>
+    <p>Bootstrap is a free and open-source CSS framework directed at responsive. It contains CSS and JS-based design templates.</p>
+    <a href="pages/bootstrap.html" target="_blank"><center>Read More</center></a>
+</center>
+</div>
+</div>
+<h1  id="contact" style="text-align: center;">CONTACT</h1>
+<div class="footer">
+    <h4>Website templeate for practical-8<br/></h4>
+      <a href="#nav" >Back To Top</a>
+</div>
+</body>
+</html>
