@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-13</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+     }
+     .main{
+         width: 100%;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 40px;
+         color: grey;
+     }
+     h1{
+         color: indianred;
+     }
+    h1:first-child{
+        color: indigo;
+    }
+     footer{
+         width: 100%;
+         background: #26272b;
+     }
+     .sect-1{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding:30px 10px;
+     }
+     .about{
+         width: 40%;
+     }
+     .sect-1 h2{
+         font-size: 18px;
+         color: lightgray;
+         text-transform: uppercase;
+     }
+     .about p{
+         text-align: justify;
+         color: grey;
+         line-height: 24px;
+         margin-top: 10px;
+     }
+     .sect-1 ul{
+         list-style: none;
+     }
+     .sect-1 ul li{
+         padding: 5px;
+     }
+     a{
+         text-decoration: none;
+         color: gray;
+     }
+     a:hover{
+         color: greenyellow;
+     }
+     span{
+         color: grey;
+     }
+     i{
+         color: grey;
+         font-size: 20px;
+         margin-right: 10px;
+     }
+     .sect-2{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         align-items: center;
+     }
+     .sect-2 p{
+         color: gray;
+         font-size: 24px;
+         padding: 0;
+     }
+     .sect-2 a{
+         display: inline-block;
+         padding: 10px 25px;
+         color: white;
+         background: red;
+         margin-left: 10px;
+         border-radius: 20px;
+         font-size: 22px;
+     }
+     .sect-2 a:hover{
+         background: greenyellow;
+     }
+     .sect-3{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+     }
+     .sect-3 ul{
+         list-style: none;
+         margin: 20px;
+     }
+     .sect-3 ul li{
+         display: inline-block;
+         width: 60px;
+         height: 60px;
+         padding: 20px;
+         background:#424424 ;
+         border-radius: 50%;
+         margin-right: 20px;
+     }
+     .sect-3 ul li i{
+         color: white;
+         font-size: 24px;
+         line-height: 20px;
+         text-align: center;
+     }
+     .sect-3 ul li:nth-child(1):hover{
+         background-color: #3b5999;
+
+     }
+     .sect-3 ul li:nth-child(2):hover{
+         background-color: #55acee;
+
+     }
+     .sect-3 ul li:nth-child(3):hover{
+         background-color: #dd4b39;
+
+     }
+     .sect-3 ul li:nth-child(4):hover{
+         background-color: #0077b5;
+
+     }
+     .sect-3 ul li:nth-child(5):hover{
+         background-color: #ea4c89;
+
+     }
+     .sect-4{
+         display: flex;
+         justify-content: center;
+         background-color: black;
+         padding: 30px;
+     }
+     .sect-4 p{
+         color: grey;
+         position: relative;
+     }
+     .sect-4 p::after{
+         content: ' ';
+         display: block;
+         width: 0;
+         height: 2px;
+         position:absolute;
+         right: 0;
+         bottom: -10px;
+         background-color: greenyellow;
+         transition: all .3s;
+     }
+     .sect-4 p:hover::after{
+         width: 100%;
+
+     }
+     hr{
+         opacity: 0.2;
+     }
+     @media (max-width:767px){
+        .main{
+         width: 100%;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 40px;
+         color: grey;
+     }
+     footer{
+         width: 100%;
+         background: #26272b;
+     }
+     .sect-1{
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         padding:30px 10px;
+     }
+     .about{
+         width: 100%;
+         margin-bottom: 20px;
+     }
+     .sect-1 h2{
+         font-size: 18px;
+         color: lightgray;
+         text-transform: uppercase;
+     }
+     .about p{
+         text-align: justify;
+         color: grey;
+         line-height: 24px;
+         margin-top: 10px;
+     }
+     .sect-1 ul{
+         list-style: none;
+     }
+     .sect-1 ul li{
+         padding: 5px;
+     }
+     a{
+         text-decoration: none;
+         color: gray;
+     }
+     a:hover{
+         color: greenyellow;
+     }
+     span{
+         color: grey;
+     }
+     i{
+         color: grey;
+         font-size: 20px;
+         margin-right: 10px;
+     }
+     .sect-2{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         align-items: center;
+     }
+     .sect-2 p{
+         color: gray;
+         font-size: 24px;
+         padding: 0;
+     }
+     .sect-2 a{
+         display: inline-block;
+         padding: 10px 25px;
+         color: white;
+         background: red;
+         margin-left: 10px;
+         border-radius: 20px;
+         font-size: 22px;
+     }
+     .sect-2 a:hover{
+         background: greenyellow;
+     }
+     .sect-3{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+     }
+     .sect-3 ul{
+         list-style: none;
+         margin: 20px;
+     }
+     .sect-3 ul li{
+         display: inline-block;
+         width: 60px;
+         height: 60px;
+         padding: 20px;
+         background:#424424 ;
+         border-radius: 50%;
+         margin-right: 20px;
+     }
+     .sect-3 ul li i{
+         color: white;
+         font-size: 24px;
+         line-height: 20px;
+         text-align: center;
+     }
+     .sect-3 ul li:nth-child(1):hover{
+         background-color: #3b5999;
+
+     }
+     .sect-3 ul li:nth-child(2):hover{
+         background-color: #55acee;
+
+     }
+     .sect-3 ul li:nth-child(3):hover{
+         background-color: #dd4b39;
+
+     }
+     .sect-3 ul li:nth-child(4):hover{
+         background-color: #0077b5;
+
+     }
+     .sect-3 ul li:nth-child(5):hover{
+         background-color: #ea4c89;
+
+     }
+     .sect-4{
+         display: flex;
+         justify-content: center;
+         background-color: black;
+         padding: 30px;
+     }
+     .sect-4 p{
+         color: grey;
+         position: relative;
+     }
+     .sect-4 p::after{
+         content: '';
+         display: block;
+         width: 2px;
+         height: 2px;
+         position:absolute;
+         right: 0;
+         bottom: -10px;
+         background-color: greenyellow;
+         transition: all .3s;
+     }
+     .sect-4 p:hover::after{
+         width: 100%;
+
+     }
+     hr{
+         opacity: 0.2;
+     }
+     }
+      @media (max-width: 499px){
+        .main{
+         width: 100%;
+         height: 100px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 40px;
+         color: grey;
+     }
+     footer{
+         width: 100%;
+         background: #26272b;
+     }
+     .sect-1{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding:30px 10px;
+     }
+     .about{
+         width: 100%;
+     }
+     .sect-1 h2{
+         font-size: 18px;
+         color: lightgray;
+         text-transform: uppercase;
+         margin-top: 20px;
+     }
+     .about p{
+         text-align: justify;
+         color: grey;
+         line-height: 24px;
+         margin-top: 10px;
+     }
+     .sect-1 ul{
+         list-style: none;
+     }
+     .sect-1 ul li{
+         padding: 5px;
+     }
+     a{
+         text-decoration: none;
+         color: gray;
+     }
+     a:hover{
+         color: greenyellow;
+     }
+     span{
+         color: grey;
+     }
+     i{
+         color: grey;
+         font-size: 20px;
+         margin-right: 10px;
+     }
+     .sect-2{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         align-items: center;
+     }
+     .sect-2 p{
+         color: gray;
+         font-size: 24px;
+         padding: 0;
+     }
+     .sect-2 a{
+         display: inline-block;
+         padding: 10px 25px;
+         color: white;
+         background: red;
+         margin-left: 10px;
+         border-radius: 20px;
+         font-size: 22px;
+     }
+     .sect-2 a:hover{
+         background: greenyellow;
+     }
+     .sect-3{
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+     }
+     .sect-3 ul{
+         list-style: none;
+         margin: 20px;
+     }
+     .sect-3 ul li{
+         display: inline-block;
+         width: 40px;
+         height: 40px;
+         padding: 10px;
+         background:#424424 ;
+         border-radius: 50%;
+         margin-right: 10px;
+     }
+     .sect-3 ul li i{
+         color: white;
+         font-size: 24px;
+         line-height: 20px;
+         text-align: center;
+     }
+     .sect-3 ul li:nth-child(1):hover{
+         background-color: #3b5999;
+
+     }
+     .sect-3 ul li:nth-child(2):hover{
+         background-color: #55acee;
+
+     }
+     .sect-3 ul li:nth-child(3):hover{
+         background-color: #dd4b39;
+
+     }
+     .sect-3 ul li:nth-child(4):hover{
+         background-color: #0077b5;
+
+     }
+     .sect-3 ul li:nth-child(5):hover{
+         background-color: #ea4c89;
+
+     }
+     .sect-4{
+         display: flex;
+         justify-content: center;
+         background-color: black;
+         padding: 30px;
+     }
+     .sect-4 p{
+         color: grey;
+         position: relative;
+     }
+     .sect-4 p::after{
+         content: '';
+         display: block;
+         width: 2px;
+         height: 2px;
+         position:absolute;
+         right: 0;
+         bottom: -10px;
+         background-color: greenyellow;
+         transition: all .3s;
+     }
+     .sect-4 p:hover::after{
+         width: 100%;
+
+     }
+     hr{
+         opacity: 0.2;
+     }
+      }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <h1>Responsive&nbsp&nbsp</h1><h1>Footer</h1>
+    </section>
+    <footer>
+    <section class="sect-1">
+        <section class="about"><h2>About</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste veritatis earum eos facere iure dolore tenetur ducimus impedit sapiente necessitatibus assumenda quo, ex eius consequatur et officia id natus laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto sequi provident eius, autem nihil rem illum atque eaque nisi cumque?
+        </p></section>
+        <section class="cat"><h2>Categories</h2><ul><li><a href="#">C</a></li>
+        <li><a href="#">UI Desig</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">Android</a></li>
+    <li><a href="#">Hybrid Appa</a></li></ul></section>
+        <section class="links"><h2>Quick Links</h2>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul></section>
+        <section class="cont">
+            <h2>Contact Us</h2>
+            <ul>
+            <li><i class="fa fa-home"></i><span>Gla University,Mathura</span></li>
+            <li><i class="fa fa-envelope"></i><span>jeevesh.gangwar_cs18@gla.ac.in</span></li>
+            <li><i class="fa fa-phone-square"></i><span>Mobile:9100000000</span></li>
+            <li><i class="fa fa-facebook-official"></i><a href="#">Jeevesh Gangwar</a></li>
+            </ul>
+        </section>
+    </section>
+    <hr width="100%" noshade/>
+    <section class="sect-2">
+        <p>Register For Free</p>
+        <a href="#">SignUp!</a>
+    </section>
+    <hr width="100%" noshade/>
+    <section class="sect-3">
+        <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        </ul>
+    </section>
+    <section class="sect-4">
+        <p>Copyright @ 2020 All Rights Reserved By <a href="#">Jeevesh</a></p>
+    </section-sect-4>
+</footer>
+</body>
+</html>
